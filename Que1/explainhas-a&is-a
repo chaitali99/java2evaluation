@@ -1,0 +1,31 @@
+Que:Diference between HAS-A and IS-A realtionship with the help of example?and explain aceess modifier and their accessibility.
+Ans:
+Access Modifier:
+	1.private:The access of a private modifier is only within a class it can not be accessed from outside the class.
+	2.Default:The access of a default modifier is only within a package.It cannot be accessed from outside the package.
+	If you do not specify any access modifier it will act as a default.
+	3.Protected:the access of a protected modifier is within the package and outside the package through child If you
+	do not make child class it cannot be access from outside the package.
+	4.Public the access of public modifier is everywhere it can be accessed from the class within the package and outside 
+	the package.
+	
+	IS-A:An IS-A relationship is inheritance.The classes which inherite are known as sub classes. 
+	On the other hand,HAS-A relationship is composition.
+	
+	In OOP IS-A relationship is completely inheritance. This means, that the child class is a type
+	of parents class. For example, an apple is a fruit. So you will extend fruit to get apple.
+	
+	class Apple extends Fruit{
+	}
+	
+	on the other hand, composition means creating instances which have references to other objects for example a 
+	room has a table so you will create a class room and then in that lass create an instance of type table.
+	
+	class Room{
+	
+		Table t=new Table();
+	} 
+	
+	A has-a relationship is dynamic binding(runtime) while inheritance is a static (compile time)binding if you just want to reuse
+	the code and you know that the two are not of same kind use composition. For example, you cannot inherit an oven from a 
+	kitchen A kitchen Has-a oven when you feel there is a natural realtionship like apple and fruit use in inheritance.
